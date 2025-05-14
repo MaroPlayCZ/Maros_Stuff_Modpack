@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "maros_stuff:redstone_alloy_ingot"
+    }
+  },
+  "result": {
+    "item": "maros_stuff:redstone_alloy_block"
+  }
+}

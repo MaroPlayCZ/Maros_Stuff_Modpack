@@ -1,0 +1,15 @@
+{
+  "item.maros_stuff.sock": "Sock",
+  "item.maros_stuff.miata": "Miata",
+  "item.maros_stuff.redstone_alloy_ingot": "Redstone Alloy Ingot",
+  "item.maros_stuff.diamonded_quartz": "Diamonded Quartz",
+  "item.maros_stuff.enderic_acid": "Enderic Acid",
+  "item.maros_stuff.ender_alloy_ingot": "Ender Alloy Ingot",
+
+  "block.maros_stuff.redstone_alloy_block": "Redstone Alloy Block",
+  "block.maros_stuff.diamonded_quartz_block": "Diamonded Quartz Block",
+  "block.maros_stuff.enderic_acid_chunk": "Enderic Acid Chunk",
+  "block.maros_stuff.ender_alloy_block": "Ender Alloy Block",
+
+  "creativetab.maros_stuff": "Maro's Stuff"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "maros_stuff:block/redstone_alloy_block"
+    }
+  }
+}
