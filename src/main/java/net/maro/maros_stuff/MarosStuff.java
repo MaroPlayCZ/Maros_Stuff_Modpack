@@ -52,6 +52,12 @@ public class MarosStuff {
             event.accept(ModItems.ENDERIC_ACID);
             event.accept(ModItems.ENDER_ALLOY_INGOT);
         }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.REDSTONE_ALLOY_BLOCK);
+            event.accept(ModBlocks.DIAMONDED_QUARTZ_BLOCK);
+            event.accept(ModBlocks.ENDERIC_ACID_CHUNK);
+            event.accept(ModBlocks.ENDER_ALLOY_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
