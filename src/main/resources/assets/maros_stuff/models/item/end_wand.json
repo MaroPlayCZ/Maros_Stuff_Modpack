@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "maros_stuff:item/end_wand"
+  }
+}

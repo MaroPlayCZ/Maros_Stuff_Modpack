@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DIAMONDED_QUARTZ.get());
                         output.accept(ModItems.ENDERIC_ACID.get());
                         output.accept(ModItems.ENDER_ALLOY_INGOT.get());
+                        output.accept(ModItems.END_WAND.get());
 
 
                         output.accept(ModBlocks.REDSTONE_ALLOY_BLOCK.get());

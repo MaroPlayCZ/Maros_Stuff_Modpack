@@ -1,6 +1,7 @@
 package net.maro.maros_stuff.item;
 
 import net.maro.maros_stuff.MarosStuff;
+import net.maro.maros_stuff.item.custom.EndWandItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +26,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENDER_ALLOY_INGOT = ITEMS.register("ender_alloy_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> END_WAND = ITEMS.register("end_wand",
+            () -> new EndWandItem(new Item.Properties().durability(248)));
 
 
     public static void register(IEventBus eventBus) {
