@@ -29,7 +29,7 @@ public class EndWandItem extends Item {
         if (!pLevel.isClientSide) {
             ThrownEnderpearl thrownenderpearl = new ThrownEnderpearl(pLevel, pPlayer);
             thrownenderpearl.setItem(new ItemStack(Items.ENDER_PEARL));
-            thrownenderpearl.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 3F, 1.0F);
+            thrownenderpearl.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 2F, 1.0F);
             pLevel.addFreshEntity(thrownenderpearl);
         }
 
