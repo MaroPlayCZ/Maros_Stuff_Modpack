@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "maros_stuff:ender_acid_chunk"
+          "name": "maros_stuff:enderic_acid_chunk"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "maros_stuff:blocks/ender_acid_chunk"
+  "random_sequence": "maros_stuff:blocks/enderic_acid_chunk"
 }

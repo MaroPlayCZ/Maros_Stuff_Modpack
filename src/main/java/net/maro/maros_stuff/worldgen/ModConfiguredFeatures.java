@@ -16,6 +16,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTes
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ModConfiguredFeatures {
@@ -24,8 +25,11 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
-        register(context, ACID_CHUNK_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
-                ModBlocks.ENDERIC_ACID_CHUNK.get().defaultBlockState(), 9));
+        List<OreConfiguration.TargetBlockState> endAcid = List.of(OreConfiguration.target(endReplaceables,
+                ModBlocks.ENDERIC_ACID_CHUNK.get().defaultBlockState()));
+
+        register(context, ACID_CHUNK_KEY, Feature.ORE, new OreConfiguration(endAcid, 90));
+
     }
 
 
