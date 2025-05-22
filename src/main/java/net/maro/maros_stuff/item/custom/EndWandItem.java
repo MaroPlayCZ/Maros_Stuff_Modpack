@@ -29,8 +29,9 @@ public class EndWandItem extends Item {
         if (!pLevel.isClientSide) {
             ThrownEnderpearl thrownenderpearl = new ThrownEnderpearl(pLevel, pPlayer);
             thrownenderpearl.setItem(new ItemStack(Items.ENDER_PEARL));
-            thrownenderpearl.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 2F, 1.0F);
+            thrownenderpearl.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 2F, 2F);
             pLevel.addFreshEntity(thrownenderpearl);
+            damageItem(itemstack,1,pPlayer,player -> player.setItemInHand(pHand, itemstack));
         }
 
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());

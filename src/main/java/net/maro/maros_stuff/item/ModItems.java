@@ -27,7 +27,9 @@ public class ModItems {
     public static final RegistryObject<Item> ENDER_ALLOY_INGOT = ITEMS.register("ender_alloy_ingot",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> END_WAND = ITEMS.register("end_wand",
-            () -> new EndWandItem(new Item.Properties().durability(248)));
+            () -> new EndWandItem(new Item.Properties().defaultDurability(256)));
+    public static final RegistryObject<Item> END_WAND_EMPTY = ITEMS.register("end_wand_empty",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
