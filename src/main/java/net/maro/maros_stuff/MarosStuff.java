@@ -55,6 +55,7 @@ public class MarosStuff {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.REDSTONE_ALLOY_BLOCK);
             event.accept(ModBlocks.DIAMONDED_QUARTZ_BLOCK);
+            event.accept(ModBlocks.ENDERIC_ACID_ORE);
             event.accept(ModBlocks.ENDERIC_ACID_CHUNK);
             event.accept(ModBlocks.ENDER_ALLOY_BLOCK);
         }

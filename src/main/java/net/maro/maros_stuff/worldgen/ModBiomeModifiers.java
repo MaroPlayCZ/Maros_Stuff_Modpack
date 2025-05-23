@@ -13,16 +13,16 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers {
-    public static final ResourceKey<BiomeModifier> ADD_ACID_CHUNK = registerKey("add_acid_chunk");
+    public static final ResourceKey<BiomeModifier> ADD_ENDERIC_ACID_ORE = registerKey("add_enderic_acid_ore");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
-        context.register(ADD_ACID_CHUNK, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_ENDERIC_ACID_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ACID_CHUNK_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ENDERIC_ACID_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

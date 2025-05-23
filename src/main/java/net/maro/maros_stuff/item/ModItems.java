@@ -26,10 +26,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENDER_ALLOY_INGOT = ITEMS.register("ender_alloy_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> END_WAND = ITEMS.register("end_wand",
-            () -> new EndWandItem(new Item.Properties().defaultDurability(5)));
     public static final RegistryObject<Item> END_WAND_EMPTY = ITEMS.register("end_wand_empty",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> END_WAND = ITEMS.register("end_wand",
+            () -> new EndWandItem(new Item.Properties().defaultDurability(4)));
 
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "maros_stuff:end_wand_empty"
+    },
+    {
+      "item": "maros_stuff:enderic_acid"
+    }
+  ],
+  "result": {
+    "item": "maros_stuff:end_wand"
+  }
+}

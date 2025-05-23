@@ -16,20 +16,19 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTes
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ModConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ACID_CHUNK_KEY = registerKey("enderic_acid_chunk");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDERIC_ACID_ORE_KEY = registerKey("enderic_acid_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+        RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest netherrackReplacables = new BlockMatchTest(Blocks.NETHERRACK);
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
-        List<OreConfiguration.TargetBlockState> endAcid = List.of(OreConfiguration.target(endReplaceables,
-                ModBlocks.ENDERIC_ACID_CHUNK.get().defaultBlockState()));
-
-        register(context, ACID_CHUNK_KEY, Feature.ORE, new OreConfiguration(endAcid, 90));
-
+        register(context, ENDERIC_ACID_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+                ModBlocks.ENDERIC_ACID_ORE.get().defaultBlockState(), 9));///9
     }
 
 

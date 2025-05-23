@@ -24,8 +24,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> DIAMONDED_QUARTZ_BLOCK = registerBlock("diamonded_quartz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> ENDERIC_ACID_ORE = registerBlock("enderic_acid_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).destroyTime(3000)));
     public static final RegistryObject<Block> ENDERIC_ACID_CHUNK = registerBlock("enderic_acid_chunk",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.AMETHYST_CLUSTER)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER)));
     public static final RegistryObject<Block> ENDER_ALLOY_BLOCK = registerBlock("ender_alloy_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
