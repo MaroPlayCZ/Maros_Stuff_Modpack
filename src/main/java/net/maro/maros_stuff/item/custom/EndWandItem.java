@@ -36,7 +36,7 @@ public class EndWandItem extends Item {
             thrownenderpearl.setItem(new ItemStack(Items.ENDER_PEARL));
             thrownenderpearl.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 2F, 2F);
             pLevel.addFreshEntity(thrownenderpearl);
-            pPlayer.getItemInHand(pHand).hurtAndBreak(1,pPlayer,player -> player.broadcastBreakEvent(pHand));
+            pPlayer.getItemInHand(pHand).hurtAndBreak(1,pPlayer,player -> player.setItemInHand(pHand, new ItemStack(ModItems.SOCK.get())));
         }
 
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
