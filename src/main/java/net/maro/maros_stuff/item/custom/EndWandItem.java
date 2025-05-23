@@ -29,6 +29,8 @@ public class EndWandItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
 
+        ItemStack wand = new ItemStack(ModItems.END_WAND_EMPTY.get());
+
         pLevel.playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDER_PEARL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
         pPlayer.getCooldowns().addCooldown(this, 30);
         if (!pLevel.isClientSide) {
@@ -36,7 +38,7 @@ public class EndWandItem extends Item {
             thrownenderpearl.setItem(new ItemStack(Items.ENDER_PEARL));
             thrownenderpearl.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 2F, 2F);
             pLevel.addFreshEntity(thrownenderpearl);
-            pPlayer.getItemInHand(pHand).hurtAndBreak(1,pPlayer,player -> player.setItemInHand(pHand, new ItemStack(ModItems.SOCK.get())));
+            pPlayer.getItemInHand(pHand).hurtAndBreak(1,pPlayer, player -> player.broadcastBreakEvent(pHand));
         }
 
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
