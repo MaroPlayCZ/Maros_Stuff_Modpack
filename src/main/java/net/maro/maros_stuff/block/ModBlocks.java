@@ -1,6 +1,8 @@
 package net.maro.maros_stuff.block;
 
 import net.maro.maros_stuff.MarosStuff;
+import net.maro.maros_stuff.block.custom.EndericAcidChunkBlock;
+import net.maro.maros_stuff.block.custom.EndericAcidClusterBlock;
 import net.maro.maros_stuff.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -27,7 +29,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDERIC_ACID_ORE = registerBlock("enderic_acid_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).destroyTime(3000)));
     public static final RegistryObject<Block> ENDERIC_ACID_CHUNK = registerBlock("enderic_acid_chunk",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER)));
+            () -> new EndericAcidChunkBlock(BlockBehaviour.Properties.copy(Blocks.BUDDING_AMETHYST)));
+    public static final RegistryObject<Block> ENDERIC_ACID_SMALL_BUD = registerBlock("enderic_acid_small_bud",
+            () -> new EndericAcidClusterBlock(4,1, BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).noLootTable()));
+    public static final RegistryObject<Block> ENDERIC_ACID_MEDIUM_BUD = registerBlock("enderic_acid_medium_bud",
+            () -> new EndericAcidClusterBlock(6,1, BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).noLootTable()));
+    public static final RegistryObject<Block> ENDERIC_ACID_LARGE_BUD = registerBlock("enderic_acid_large_bud",
+            () -> new EndericAcidClusterBlock(8,1, BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).noLootTable()));
+    public static final RegistryObject<Block> ENDERIC_ACID_CLUSTER = registerBlock("enderic_acid_cluster",
+            () -> new EndericAcidClusterBlock(12,1, BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER)));
     public static final RegistryObject<Block> ENDER_ALLOY_BLOCK = registerBlock("ender_alloy_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 

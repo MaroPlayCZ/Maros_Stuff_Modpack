@@ -12,6 +12,10 @@
   "block.maros_stuff.diamonded_quartz_block": "Diamonded Quartz Block",
   "block.maros_stuff.enderic_acid_ore": "Enderic Acid Ore",
   "block.maros_stuff.enderic_acid_chunk": "Enderic Acid Chunk",
+  "block.maros_stuff.enderic_acid_small_bud": "Enderic Acid Small Bud",
+  "block.maros_stuff.enderic_acid_medium_bud": "Enderic Acid Medium Bud",
+  "block.maros_stuff.enderic_acid_large_bud": "Enderic Acid Large Bud",
+  "block.maros_stuff.enderic_acid_cluster": "Enderic Acid Cluster",
   "block.maros_stuff.ender_alloy_block": "Ender Alloy Block",
 
   "creativetab.maros_stuff": "Maro's Stuff"
