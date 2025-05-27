@@ -25,9 +25,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ENDER_ALLOY_INGOT.get());
                         output.accept(ModItems.END_WAND.get());
 
-
                         output.accept(ModBlocks.REDSTONE_ALLOY_BLOCK.get());
                         output.accept(ModBlocks.DIAMONDED_QUARTZ_BLOCK.get());
+                        output.accept(ModBlocks.ENDERIC_ACID_ORE.get());
                         output.accept(ModBlocks.ENDERIC_ACID_CHUNK.get());
                         output.accept(ModBlocks.ENDER_ALLOY_BLOCK.get());
 

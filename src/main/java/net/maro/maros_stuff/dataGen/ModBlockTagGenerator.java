@@ -37,7 +37,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.REDSTONE_ALLOY_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.ENDERIC_ACID_CHUNK.get(),
+                .add(ModBlocks.DIAMONDED_QUARTZ_BLOCK.get(),
+                        ModBlocks.ENDERIC_ACID_CHUNK.get(),
                         ModBlocks.ENDERIC_ACID_CLUSTER.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)

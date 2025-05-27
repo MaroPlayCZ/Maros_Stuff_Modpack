@@ -27,7 +27,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DIAMONDED_QUARTZ_BLOCK = registerBlock("diamonded_quartz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> ENDERIC_ACID_ORE = registerBlock("enderic_acid_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).destroyTime(3000)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE)));
     public static final RegistryObject<Block> ENDERIC_ACID_CHUNK = registerBlock("enderic_acid_chunk",
             () -> new EndericAcidChunkBlock(BlockBehaviour.Properties.copy(Blocks.BUDDING_AMETHYST)));
     public static final RegistryObject<Block> ENDERIC_ACID_SMALL_BUD = registerBlock("enderic_acid_small_bud",
