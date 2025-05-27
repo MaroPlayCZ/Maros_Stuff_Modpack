@@ -30,11 +30,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ENDERIC_ACID_MEDIUM_BUD.get(),
                         ModBlocks.ENDERIC_ACID_LARGE_BUD.get(),
                         ModBlocks.ENDERIC_ACID_CLUSTER.get(),
-                        ModBlocks.ENDER_ALLOY_BLOCK.get());
+                        ModBlocks.ENDER_ALLOY_BLOCK.get(),
+                        ModBlocks.ALLOYER_MK1.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.REDSTONE_ALLOY_BLOCK.get());
+                .add(ModBlocks.REDSTONE_ALLOY_BLOCK.get(),
+                        ModBlocks.ALLOYER_MK1.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DIAMONDED_QUARTZ_BLOCK.get(),

@@ -31,6 +31,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.ENDERIC_ACID_CHUNK.get());
                         output.accept(ModBlocks.ENDER_ALLOY_BLOCK.get());
 
+                        output.accept(ModBlocks.ALLOYER_MK1.get());
+
                     })
                     .build());
 

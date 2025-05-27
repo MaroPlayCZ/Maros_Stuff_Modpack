@@ -32,6 +32,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.REDSTONE_ALLOY_BLOCK.get());
         this.dropSelf(ModBlocks.DIAMONDED_QUARTZ_BLOCK.get());
         this.dropSelf(ModBlocks.ENDER_ALLOY_BLOCK.get());
+        this.dropSelf(ModBlocks.ALLOYER_MK1.get());
 
         this.dropOther(ModBlocks.ENDERIC_ACID_ORE.get(),ModItems.ENDERIC_ACID.get());
         this.dropOther(ModBlocks.ENDERIC_ACID_CLUSTER.get(),ModItems.ENDERIC_ACID.get());

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "north": { "model": "block/alloyer_mk1" },
+    "south": { "model": "block/alloyer_mk1", "y": 180 },
+    "west": { "model": "block/alloyer_mk1", "y": 270 },
+    "east": { "model": "block/alloyer_mk1", "y": 90 }
+  }
+}
