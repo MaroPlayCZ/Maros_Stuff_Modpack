@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "front": "maros_stuff:block/alloyer_mk1_front",
+    "front": "maros_stuff:block/alloyer_mk1_front_on",
     "side": "maros_stuff:block/alloyer_mk1_side",
-    "back": "minecraft:block/iron_block",
+    "back": "maros_stuff:block/alloyer_mk1_back",
     "top": "minecraft:block/iron_block",
     "bottom": "maros_stuff:block/alloyer_mk1_bottom"
   }
