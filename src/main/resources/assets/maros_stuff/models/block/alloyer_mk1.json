@@ -3,8 +3,7 @@
   "textures": {
     "front": "maros_stuff:block/alloyer_mk1_front",
     "side": "maros_stuff:block/alloyer_mk1_side",
-    "back": "minecraft:block/iron_block",
     "top": "minecraft:block/iron_block",
-    "bottom": "maros_stuff:block/alloyer_mk1_bottom"
+    "bottom": "minecraft:block/polished_deepslate"
   }
 }
