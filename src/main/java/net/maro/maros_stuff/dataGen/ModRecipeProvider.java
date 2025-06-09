@@ -3,7 +3,6 @@ package net.maro.maros_stuff.dataGen;
 import net.maro.maros_stuff.MarosStuff;
 import net.maro.maros_stuff.block.ModBlocks;
 import net.maro.maros_stuff.item.ModItems;
-import net.maro.maros_stuff.MarosStuff;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -75,6 +74,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ENDER_ALLOY_INGOT.get()), has(ModItems.ENDER_ALLOY_INGOT.get()))
                 //pro více receptů na jednu věc je potřeba new ResourceLocation
                 .save(pWriter, new ResourceLocation(MarosStuff.MOD_ID,"end_wand_crafting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALLOYER_MK1.get())
+                .pattern("III")
+                .pattern("IBI")
+                .pattern("PPP")
+                .define('I', Items.IRON_INGOT)
+                .define('B', Items.BLAST_FURNACE)
+                .define('P', Items.POLISHED_DEEPSLATE)
+                .unlockedBy(getHasName(Items.BLAST_FURNACE), has(Items.BLAST_FURNACE))
+                .save(pWriter);
 
         //shaplessrecipes ------------------------------------------------------------------------------------------------------------------------------------------
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REDSTONE_ALLOY_INGOT.get(), 9)

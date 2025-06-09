@@ -5,19 +5,15 @@ import net.maro.maros_stuff.block.custom.AlloyerMk1Block;
 import net.maro.maros_stuff.block.custom.EndericAcidChunkBlock;
 import net.maro.maros_stuff.block.custom.EndericAcidClusterBlock;
 import net.maro.maros_stuff.item.ModItems;
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -45,12 +41,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDER_ALLOY_BLOCK = registerBlock("ender_alloy_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> ALLOYER_MK1 = registerBlock("alloyer_mk1",
-            () -> new AlloyerMk1Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)) {
-                @Override
-                public @Nullable BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-                    return null;
-                }
-            });
+            () -> new AlloyerMk1Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
