@@ -1,34 +1,25 @@
 {
   "variants": {
-    "facing=east,lit=false": {
+    "facing=east": {
       "model": "maros_stuff:block/alloyer_mk1",
       "y": 90
     },
-    "facing=east,lit=true": {
-      "model": "maros_stuff:block/alloyer_mk1_on",
-      "y": 90
-    },
-    "facing=north,lit=false": {
+    "facing=north": {
       "model": "maros_stuff:block/alloyer_mk1"
     },
-    "facing=north,lit=true": {
-      "model": "maros_stuff:block/alloyer_mk1_on"
-    },
-    "facing=south,lit=false": {
+    "facing=south": {
       "model": "maros_stuff:block/alloyer_mk1",
       "y": 180
     },
-    "facing=south,lit=true": {
-      "model": "maros_stuff:block/alloyer_mk1_on",
-      "y": 180
-    },
-    "facing=west,lit=false": {
+    "facing=west": {
       "model": "maros_stuff:block/alloyer_mk1",
       "y": 270
     },
-    "facing=west,lit=true": {
-      "model": "maros_stuff:block/alloyer_mk1_on",
-      "y": 270
+    "facing=up": {
+      "model": "maros_stuff:block/alloyer_mk1"
+    },
+    "facing=down": {
+      "model": "maros_stuff:block/alloyer_mk1"
     }
   }
 }
