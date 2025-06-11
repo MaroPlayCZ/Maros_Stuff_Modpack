@@ -1,7 +1,6 @@
 package net.maro.maros_stuff.dataGen;
 
 import net.maro.maros_stuff.MarosStuff;
-import net.maro.maros_stuff.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

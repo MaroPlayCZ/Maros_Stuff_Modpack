@@ -1,10 +1,11 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "front": "maros_stuff:block/alloyer_mk1_front",
-    "side": "maros_stuff:block/alloyer_mk1_side",
-    "back": "minecraft:block/iron_block",
-    "top": "minecraft:block/iron_block",
-    "bottom": "maros_stuff:block/alloyer_mk1_bottom"
+    "north": "maros_stuff:block/alloyer_mk1_front",
+    "south": "maros_stuff:block/alloyer_mk1_side",
+    "east": "maros_stuff:block/alloyer_mk1_side",
+    "west": "maros_stuff:block/alloyer_mk1_side",
+    "up": "minecraft:block/iron_block",
+    "down": "minecraft:block/polished_deepslate"
   }
 }
